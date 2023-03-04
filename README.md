@@ -8,6 +8,7 @@
 >* This project has implemented [Bootstrap](https://getbootstrap.com) version 5.2.3
 >* This project has implemented [ng-bootstrap](https://ng-bootstrap.github.io/) version 14.0.1
 >* This project has implemented [bootstrap-icons](https://icons.getbootstrap.com/) version 1.10.3
+>* This project has implemented [ngx-csv](https://www.npmjs.com/package/ngx-csv) version 0.3.2
 
 ## About bootstrap
 >For standardization, best practices and responsiveness, when developing new pages, think about the structure of rows and columns following the grid pattern.
