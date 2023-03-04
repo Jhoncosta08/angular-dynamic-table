@@ -20,6 +20,6 @@ export class CsvDownloadComponent {
       useBom: true,
       headers: [...new Set(this.csvHeaders)]
     };
-    return new ngxCsv(this.dataToCsv, 'tap-csv-report', options);
+    return new ngxCsv(this.dataToCsv, 'csv-report', options);
   }
 }
