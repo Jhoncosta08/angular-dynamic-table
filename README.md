@@ -114,3 +114,8 @@
 > * Always remove `console.log()`, if you need to show something in the console, prefer to use:
 > - [x] `console.warn` to show warnings.
 > - [x] `console.error` to show errors.
+
+## Preview app
+![image](https://github.com/Jhoncosta08/angular-dynamic-table/blob/master/src/assets/img/preview-one.png)
+![image](https://github.com/Jhoncosta08/angular-dynamic-table/blob/master/src/assets/img/preview-two.png)
+![image](https://github.com/Jhoncosta08/angular-dynamic-table/blob/master/src/assets/img/preview-three.png)
