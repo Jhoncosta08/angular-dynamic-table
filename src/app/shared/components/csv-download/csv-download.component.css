@@ -1,0 +1,23 @@
+#csv-download-btn {
+  border-radius: 0;
+  margin-left: 30px;
+  margin-top: 6px;
+  width: 121px;
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  background-color: #fff;
+}
+
+#csv-download-btn:hover {
+  background-color: #ED7F45;
+  border-color: #ED7F45;
+  color: #fff;
+}
+
+#csv-download-btn:focus, #csv-download-btn:active {
+  outline:0;
+  -webkit-appearance:none;
+  box-shadow: none;
+}

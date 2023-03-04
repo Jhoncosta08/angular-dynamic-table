@@ -1,0 +1,71 @@
+<div class="container-fluid table-container">
+
+  <div class="row">
+    <div class="col-sm table-title-container">
+      <h2>{{ dynamicTableTitle }}</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <div id="table-search-bar">
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="bi bi-search input-group-addon"></i></span>
+            </div>
+            <input
+              [(ngModel)]="searchInput"
+              (keyup)="filterTable()"
+              id="table-search-params-input"
+              name="search-params-input-name"
+              class="form-control"
+              type="text"
+              placeholder="Search for a specific name...  "/>
+            <div class="btn-csv-container">
+              <app-csv-download [dataToCsv]="filteredTableData" [csvHeaders]="dynamicTableData.tableHeaders"></app-csv-download>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <table *ngIf="!showSpinner && filteredTableData && filteredTableData.length" class="table table-striped">
+        <thead class="table-header">
+        <tr>
+          <th *ngFor="let header of dynamicTableData.tableHeaders"
+              [id]="header"
+              [appTableSort]="filteredTableData"
+              data-order="desc"
+              data-name=""
+              scope="col"
+              class="table-header-background table-header-text">{{ header }}<i class="bi bi-arrow-down-up table-sort-icon"></i>
+          </th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let tableObject of filteredTableData">
+          <td *ngFor="let tableObjectItem of dynamicTableData.tableHeaders">{{ tableObject[tableObjectItem] }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div *ngIf="!showSpinner && filteredTableData && !filteredTableData.length" class="row table-empty-container">
+    <div class="col-sm">
+      <p id="table-empty">There's no result to show</p>
+    </div>
+  </div>
+
+  <div *ngIf="showSpinner" class="row table-spinner-container">
+    <div class="col-sm">
+      <span class="spinner-border table-spinner" role="status"></span>
+    </div>
+  </div>
+
+</div>

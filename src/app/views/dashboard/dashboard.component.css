@@ -1,0 +1,32 @@
+/*START DASHBOARD CONTAINER STYLE*/
+.dashboard-page-container {
+  background-color: #e7e7e7;
+  min-height: 100vh;
+}
+/*END DASHBOARD CONTAINER STYLE*/
+
+/*START TITLE AND SUB TITLE STYLE*/
+.title-container {
+  background-color: #fff;
+  box-shadow: 0 3px 6px #00000029;
+  padding: 20px;
+}
+
+.title-container h1, h2 {
+  letter-spacing: 2px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.sub-title-container {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
+}
+/*END TITLE AND SUB TITLE STYLE*/

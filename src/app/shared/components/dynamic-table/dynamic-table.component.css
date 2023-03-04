@@ -1,0 +1,134 @@
+/*START SEARCH INPUT STYLES*/
+#table-search-bar {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+.input-group-text {
+  background-color: transparent;
+  border: none;
+  font-size: 23px;
+}
+
+#table-search-params-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: -43px;
+  padding-left: 43px;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+#table-search-params-input::placeholder {
+  color: #B2B2B2;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+#table-search-params-input:focus, #table-search-params-input:active, #table-search-params-input:hover, #table-search-params-input:target{
+  background-color: transparent !important;
+  outline:0;
+  -webkit-appearance:none;
+  box-shadow: none;
+  border-bottom: 2px solid #ED7F45;
+}
+
+.input-group:focus-within > .input-group-prepend i{
+  color: #ED7F45;
+}
+
+.input-group:hover > .input-group-prepend i {
+  color: #ED7F45;
+}
+/*END SEARCH INPUT STYLES*/
+
+/*START TABLE CONTAINER STYLES*/
+.table-container {
+  overflow-x: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 3px 6px #00000029;
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  margin: 0;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  background-color: #F9ECD5;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  font-weight: 400;
+}
+
+.table>:not(caption)>*>* {
+  background-color: #F9ECD580;
+}
+
+.table-header {
+  border-bottom: 2px solid #3D572C !important;
+}
+
+.table-header-text {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  color: #FFF;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.table-header-background {
+  background-color: #3D572C !important;
+}
+
+.table-order-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.table-title-container {
+  margin-bottom: 10px;
+}
+
+.table-title-container h2 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 24px;
+  font-weight: 500;
+}
+  /*END TABLE CONTAINER STYLES*/
+
+/*START EMPTY CONTAINER AND SPINNER STYLES*/
+.table-empty-container, .table-spinner-container {
+  align-items: center;
+  text-align: center;
+}
+
+#table-empty {
+  color: #B2B2B2;
+  letter-spacing: 3px;
+  font-size: 45px;
+  line-height: 84px;
+}
+
+.table-spinner {
+  border: 0.1em solid #ED7F45;
+  border-right-color: transparent;
+  margin-left: 20px;
+}
+/*END EMPTY CONTAINER AND SPINNER STYLES*/
+
+/*START SORT ICON STYLE*/
+.table-sort-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+/*END SORT ICON STYLE*/
